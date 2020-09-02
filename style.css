@@ -34,10 +34,11 @@ nav a:hover{
 /* CONTEDOR PORTADA */
 #container_port{
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     display: grid;
     place-items: center;
     overflow: hidden;
+    background: rgb(223, 223, 223);
 }
 #container_port > div{
     width: 500px;
