@@ -37,6 +37,7 @@ nav a:hover{
     height: 80vh;
     display: grid;
     place-items: center;
+    overflow: hidden;
 }
 #container_port > div{
     width: 500px;
@@ -57,10 +58,27 @@ nav a:hover{
     color: rgb(12, 87, 110);
     position: relative;
     right: 200%;
-    transition: 1s;
+    transition: 1.3s;
+}
+#container_port > div > #cont-text{
+    width: 100%;
+    position: relative;
+    right: -300%;
+    transition: 1.3s;
+    transition-delay: 0.5;
+}
+#container_port > div > #cont-text p{
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: tahoma;
 }
 
 
+
 #container_port:hover > div > h1{
+    right: 0%;
+}
+#container_port:hover > div > #cont-text{
     right: 0%;
 }
