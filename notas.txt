@@ -1,0 +1,76 @@
+Git es un sistema de control de versiones, lo que nos permitira llevar un registro de todas las modificaciones de nuestro proyecto. Se controla atravez de la consola de comandos.
+
+Comandos basicos de Git:
+
+
+git init: es para inicializar git en nuestro proyecto.
+
+git add: nos permitira meter un archivo al git. Para evitar agregar archivos uno por uno, agrega . para indicar que debe agregar todos los archivos.
+
+git status: permite ver el estado de la aplicacion. Muestra que archivos agregado y no agregado.
+
+git commit: crea un comit, que es una version del proyecto.
+
+git log: te mostrara informacion sobre el comit.
+
+git checkout -- index.html: revertira todos los cambios que hemos hecho en nuestro archivo.
+
+git diff index.html: muestra las diferencias de los cambios de nuestro archivo.
+
+git branch nombre: permite crear una nueva rama. Si deseas cambiar de rama tienes que usar el comando git checkout rama.
+
+git reset: elimina commits
+
+git revert: crea un commit con los cambios revertidos
+
+
+
+
+
+Podemos hacer referencias a un commit con el comando HEAD y si quieres hacer referencia a un commit atras utiliza la tilde HEAD~1 (hace referencia a un commit atras)
+
+
+
+
+Antes de usar git commit, debes agregar tu email y tu usuario con los siguientes codigos:
+git config --global user.name "AlexQuix"
+git config --global user.email "mathete43@gmail.com"
+puedes mejorar el codigo: git commit -m "mensaje"
+
+Luego te aparecera una pantalla de tu comit agregas el nombre y luego presionas "esc" y el comando :wq, para salir.
+
+Los comit son las versiones o los cambios que ha hecho en el proyecto.
+Un repositorio que esta siendo seguido por otros desarrolladores. 
+En git se trabaja por ramificaciones o ramas.
+
+Para ignorar un archivo o carpeta debes crear un archivo llamado ".gitignore", 
+dentro del archivo colocas todos los archivos que deseas ignorar. Luego tienes que agregar este archivo al repositorio con git add .gitignore.
+
+
+
+------------Como subir nuestro proyecto a tu repositorio.
+
+Ingresas en github y creas un nuevo repositorio, en la inf del repositorio que creaste tienes que agregar en mi caso:
+git remote add origin https://github.com/AlexQuix/primera-PagWeb.git
+En tu consola y luego agregas el siguiente comando:
+git push -u origin master
+Para agregar tu proyecto al repositorio.
+
+
+
+-----------Como clonar un repositorio
+En la seccion de repositorio copias el codigo url y luego en la linea de comandos 
+agregas el siguiente codigo:
+git clone https://github.com/AlexQuix/probando.git
+En este caso esa fue mi url.
+
+
+
+---------------Como subir tu proyecto a heroku
+Creas primero un nuevo proyecto con:
+heroku create  : seguido del nombre.
+
+Luego para conectar tu proyecto con heroku, es con  el siguiente comando:
+git push heroku master
+
+ingresas en la url: https://nombredetuproyecto.herokuapp.com/
