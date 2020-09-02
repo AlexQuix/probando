@@ -6,7 +6,7 @@
 body{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(90deg, rgb(20, 162, 206), rgb(12, 87, 110));
+    background: #fff;
 }
 
 nav{
@@ -15,7 +15,7 @@ nav{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgb(20, 162, 206), rgb(12, 87, 110));
     box-shadow: 1px 1px 10px rgb(172, 172, 172)
 }
 nav a{
@@ -23,11 +23,11 @@ nav a{
     font-size: 20px;
     font-family: tahoma;
     text-decoration-line: none;
-    color: rgb(14, 123, 156);
+    color: #fff;
     border-bottom: none;
 }
 nav a:hover{
-    border-bottom: 3px solid rgb(20, 162, 206);
+    border-bottom: 3px solid rgb(6, 243, 117);
 }
 
 
@@ -37,6 +37,7 @@ nav a:hover{
     height: 80vh;
     display: grid;
     place-items: center;
+    overflow: hidden;
 }
 #container_port > div{
     width: 500px;
@@ -54,15 +55,17 @@ nav a:hover{
     font-size: 80px;
     font-family: tahoma;
     text-align: center;
+    color: rgb(12, 87, 110);
     position: relative;
-    transition: 1.5s;
-    transition-delay: 0.1s;
+    right: 200%;
+    transition: 1.3s;
 }
 #container_port > div > #cont-text{
     width: 100%;
-    position: absolute;
-    right: 300%;
-    transition: 0.9s;
+    position: relative;
+    right: -300%;
+    transition: 1.3s;
+    transition-delay: 0.5;
 }
 #container_port > div > #cont-text p{
     width: 100%;
@@ -73,14 +76,9 @@ nav a:hover{
 
 
 
-
 #container_port:hover > div > h1{
-    font-size: 40px;
-    top: 0%;
-    transform: translateY(0%);
-    position: relative;
+    right: 0%;
 }
 #container_port:hover > div > #cont-text{
-    position: relative;
     right: 0%;
 }
